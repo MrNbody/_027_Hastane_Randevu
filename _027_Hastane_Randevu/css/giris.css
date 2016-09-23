@@ -1,0 +1,75 @@
+﻿body {
+    background-color:lightgray;
+    font-family:'Trebuchet MS',Arial,'Comic Sans MS';
+}
+*{
+    margin:0;
+    padding:0;
+    order:0;
+}
+.giris{
+    width:50%;
+    height:162px;
+    margin:10% 25%;
+    border:solid 2px azure;
+    padding:2px;
+}
+.kaydol{
+    width:50%;
+    height:520px;
+    margin:10% 25%;
+    border:solid 2px azure;
+    padding:2px;
+}
+    .giris div,
+    .kaydol div{
+        float:left;
+        height:auto;
+        width:100%;
+        margin-top:10px;
+    }
+        .giris div label,
+        .kaydol div label{
+            float:left;
+            width:30%;
+            height:auto;
+            font-size:20px;
+        }
+        .giris div label#ust,
+        .kaydol div label#ust{
+            width:100%;
+            text-align:center;
+        }
+        .giris div input,
+        .kaydol div input{
+            float:left;
+            width:67%;
+            height:30px;
+            padding-left:1%;
+            padding-right:1%;
+        }
+        .kaydol div select{
+            float:left;
+            width:69%;
+            height:30px;
+            padding-left:1%;
+            padding-right:1%;
+        }
+        .giris div.input input,
+        .kaydol div.input input,
+        .kaydol div.input span{
+            float:left;
+            width:32%;
+            height:30px;
+            padding-left:1%;
+            padding-right:1%;
+        }
+        .kaydol div.input span{
+            color:brown;
+        }
+            .giris div input#btnKayit{
+                float:right;
+            }
+            .kaydol div input#btnKaydet{
+                float:right;
+            }

@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="doktorMain.master.cs" Inherits="_027_Hastane_Randevu.doktor.doktorMain" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Doktor Panel</title>
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="css/doktorMain.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                LOGO
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="AnaSayfa.aspx">Anasayfa</a>
+                    </li>
+                    <li>
+                        <a href="HesapBilgileri.aspx">Hesap Bilgileri</a>
+                    </li>
+                    <li>
+                        <a href="CalismaSaatleri.aspx">Çalışma Saatleri</a>
+                    </li>
+                    <li>
+                        <a href="RGecmis.aspx">Randevular</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cikis">
+                <asp:Button ID="btnCikis" Text="Çıkış" runat="server" OnClick="btnCikis_Click"/>
+            </div>
+        </header>
+        <div class="banner">
+            Güneş Giren Evde Doktorun Ne İşi Var !
+        </div>
+        <div class="icerik">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <footer>
+            FOOTER
+        </footer>
+    </div>
+    </form>
+</body>
+</html>

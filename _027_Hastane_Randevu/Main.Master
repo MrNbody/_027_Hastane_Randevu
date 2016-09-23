@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="_027_Hastane_Randevu.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hastane Randevu</title>
+    <link href="css/modelCss.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/hesapbilgileri.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("header nav ul li.iletisim-wrap").mouseover(function () {
+                $("header nav ul li.iletisim-wrap .iletisim").css("display", "block")
+            })
+            $("header nav ul li.iletisim-wrap").mouseleave(function () {
+                $("header nav ul li.iletisim-wrap .iletisim").css("display", "none")
+            })
+        })
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    LOGO
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="AnaSayfa.aspx">Anasayfa</a>
+                        </li>
+                        <li>
+                            <a href="RGecmis.aspx">Randevu Geçmişi</a>
+                        </li>
+                        <li>
+                            <a href="HesapBilgileri.aspx">Hesap Bilgileri</a>
+                        </li>
+                        <li>
+                            <a href="#">Duyurular</a>
+                        </li>
+                        <li class="iletisim-wrap">İletişim
+                        <div class="iletisim">
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">İnstagram</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cikis">
+                    <asp:Button ID="btnCikis" Text="Çıkış" runat="server" OnClick="btnCikis_Click" />
+                </div>
+            </header>
+            <div class="banner">
+                Güneş Giren Evde Doktorun Ne İşi Var !
+            </div>
+            <div class="icerik">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+            <footer>
+                FOOTER
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

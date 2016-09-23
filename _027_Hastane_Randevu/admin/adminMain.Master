@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMain.master.cs" Inherits="_027_Hastane_Randevu.admin.adminMain" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Panel</title>
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="css/adminMain.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                LOGO
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="AnaSayfa.aspx">Anasayfa</a>
+                    </li>
+                    <li>
+                        <a href="Doktor.aspx">Doktor</a>
+                    </li>
+                    <li>
+                        <a href="Hastane.aspx">Hastane</a>
+                    </li>
+                    <li>
+                        <a href="Klinik.aspx">Klinik</a>
+                    </li>
+                    <li class="iletisim-wrap">
+                        İletişim
+                        <div class="iletisim">
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">İnstagram</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cikis">
+                <asp:Button ID="btnCikis" Text="Çıkış" runat="server" OnClick="btnCikis_Click"/>
+            </div>
+        </header>
+        <div class="banner">
+            Güneş Giren Evde Doktorun Ne İşi Var !
+        </div>
+        <div class="icerik">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <footer>
+            FOOTER
+        </footer>
+    </div>
+    </form>
+</body>
+</html>

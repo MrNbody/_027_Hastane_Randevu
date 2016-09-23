@@ -1,0 +1,56 @@
+﻿body {
+    background-color:lightgray;
+    font-family:'Trebuchet MS',Arial,'Comic Sans MS';
+    color:dimgray;
+}
+*{
+    margin:0;
+    padding:0;
+    order:0;
+}
+.body{
+    width:99%;
+    height:auto;
+    background-color:azure;
+    padding-left:1%;
+}
+    .body div{
+        float:left;
+        width:100%;
+        height:auto;
+        margin-top:10px;
+    }
+    .body div label{
+        float:left;
+        width:10%;
+        font-size:20px;
+    }
+    .body div input{
+        float:left;
+        width:87%;
+        height:30px;
+        padding-left:1%;
+        padding-right:1%;
+    }
+    .body div select{
+        float:left;
+        width:89%;
+        height:30px;
+        padding-left:1%;
+        padding-right:1%;
+    }
+    .body div.btnKaydet input{
+        float:left;
+        width:89%;
+        height:30px;
+        padding-left:1%;
+        padding-right:1%;
+        cursor:pointer;
+    }
+    .body div.btnKaydet span{
+        float:left;
+        width:10%;
+        font-size:20px;
+        color:indianred;
+        cursor:default;
+    }
